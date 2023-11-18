@@ -1,7 +1,12 @@
-.body
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
 {
     position: relative;
-    background-color: #beb8b8;
+    background-color:#e7f5ff;
     font-family: sans-serif;
     
 }
@@ -22,7 +27,7 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    border: 1px solid #f2f2f2;
+
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
 }
@@ -32,17 +37,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    justify-content: center;
      /* This ensures the container takes the full height of the viewport */
   }
 
+  .title
+{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+.head {
+    width: 95%;
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-bar-links:link,.nav-bar-links:visited{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .nav-bar-links:active,.nav-bar-links:hover{
+      border-radius: 6px;
+      color: #4dabf7;
+      transition: all 0.3s ease;
+  }
+  
 .form input
 {
     align-self: center;
     outline: none;
     padding: 0.5rem 1rem;
-    width: 30%;
-    text-align: center;
+    width: 40%;
+
 }
 
 .button {
@@ -69,4 +103,10 @@ textarea{
 
 
   
-
+@media(max-width:728px)
+{
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+}

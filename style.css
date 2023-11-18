@@ -198,17 +198,52 @@ body{
     
 }
 
-
-@media(max-width:728px)
+.nav-logo
 {
-    .hero-img{
-        display: none;
-    }
+    display: none;
+}
+.w-6{
+    stroke: #000;
+    width: 30px;
+    flex: 0;
+    
+}
+@media (max-width: 768px) {
+  .head {
+    padding: 1rem;
+  }
 
-    .FAQs{
-        display: block;
-    }
+  .nav-bar {
+    display: none;
+  }
 
+  .nav-logo {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-bar-links {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .middle-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .FAQs {
+    grid-template-columns: 1fr;
+  }
 }
 
 
